@@ -7,16 +7,16 @@
 POST {{host}}/login
 content-type: {{contentType}}
 
-&email=luisinhotf@gmail.com
-&password=luisinho23
+&email=example@gmail.com
+&password=example231
 
 ### register
 POST {{host}}/register
 content-type: {{contentType}}
 
-&name=Luis Layme Mamani
-&email=laymemamaniluisalbaro@gmail.com
-&password=luisinho231
+&name=Kylie
+&email=kylie@gmail.com
+&password=kylie231
 
 ### Validate Email
 GET {{host}}/validate-email/ABC

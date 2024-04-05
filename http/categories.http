@@ -1,0 +1,15 @@
+@host = http://localhost:3000/api/categories
+@contentType = application/x-www-form-urlencoded
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MGRiNTUyMTRiMTAyYjBjMDE1ZWZjOSIsImlhdCI6MTcxMjI3NjUzOSwiZXhwIjoxNzEyMjgzNzM5fQ.SvhCqGMMENNHMrrDnkgyFz4ekTxvTf0e6ZxarENXiuA
+
+### categories
+POST {{host}}
+Content-Type: {{contentType}}
+Authorization: Bearer {{token}}
+
+&name=Hot Chocolate 23
+&available=true
+
+### categories
+GET {{host}}?page=3&limit=5
+Content-Type: {{contentType}}

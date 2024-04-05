@@ -7,14 +7,14 @@
 POST {{host}}/login
 content-type: {{contentType}}
 
-&email=example@gmail.com
-&password=example231
+&email=kylie@gmail.com
+&password=kylie231
 
 ### register
 POST {{host}}/register
 content-type: {{contentType}}
 
-&name=Kylie
+&name=Kylie Quuien
 &email=kylie@gmail.com
 &password=kylie231
 

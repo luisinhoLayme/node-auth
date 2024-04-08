@@ -1,4 +1,3 @@
-import { totalmem } from "os";
 import { CategoryModel } from "../../data";
 import { CreateCategoryDto, CustomError, PaginationDto, UserEntity } from "../../domain";
 

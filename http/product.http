@@ -1,4 +1,4 @@
-@host = http://localhost:3000/api/categories
+@host = http://localhost:3000/api/products
 @contentType = application/x-www-form-urlencoded
 @token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MGRiNTUyMTRiMTAyYjBjMDE1ZWZjOSIsImlhdCI6MTcxMjYxMDQ4MCwiZXhwIjoxNzEyNjE3NjgwfQ.Leup8PtHCA12m-w5JbXU-H-zggWbDB69jvSl_l2LGtQ
 
@@ -7,9 +7,9 @@ POST {{host}}
 Content-Type: {{contentType}}
 Authorization: Bearer {{token}}
 
-&name=Hot
-&available=false
+&name=Hot Chocolate 4
+&category=66145d6fa790324d81c2ce79
 
 ### categories
-GET {{host}}?page=3&limit=10
+GET {{host}}
 Content-Type: {{contentType}}

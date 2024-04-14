@@ -1,0 +1,4 @@
+@host = http://localhost:3000/api/images
+
+
+GET {{host}}/users/c3557051-eeae-4e28-828e-283c85400f91.jpg

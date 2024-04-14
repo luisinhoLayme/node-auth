@@ -1,0 +1,30 @@
+@host = http://localhost:3000/api/upload
+@contentType = application/x-www-form-urlencoded
+
+
+### upload single file
+POST {{host}}/single/users
+Content-Type: multipart/form-data; boundary="luisinho"
+
+--luisinho
+Content-Disposition: form-data; name="file"; filename="kylie.jpg"
+Content-Type: image/jpg
+
+< ./Captura de pantalla (354).jpg
+--luisinho--
+
+### upload multiples files
+POST {{host}}/multiple/products
+Content-Type: multipart/form-data; boundary="luisinho"
+
+--luisinho
+Content-Disposition: form-data; name="file"; filename="kylie.jpg"
+Content-Type: image/jpg
+
+< ./1.jpg
+--luisinho
+Content-Disposition: form-data; name="file"; filename="Captura de pantalla (354).jpg"
+Content-Type: image/jpg
+
+< ./Captura de pantalla (354).jpg
+--luisinho--
